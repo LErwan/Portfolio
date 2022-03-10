@@ -1,0 +1,241 @@
+/*ALL*/
+*{
+    margin: 0;
+    padding: 0; 
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(17 17 17);
+    font-family: 'Raleway', sans-serif;
+}
+img{
+    object-fit: cover;
+}
+a{
+    text-decoration: none;
+}
+.yellow{
+    color: #fee800;
+    font-weight: 700;
+}
+/*HEADER*/
+header{
+    width: 90%;
+    margin: 40px auto 100px auto;
+    display: flex;
+    justify-content: space-between;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+}
+header nav :nth-child(2){
+    border-bottom: 1px solid #ffffff;
+}
+header nav a{
+    color: #ffffff;
+    font-size: 1.3em;
+    padding-bottom: 4px;
+    font-weight: 500;
+}
+header nav a:hover{
+    border-bottom: 1px solid #ffffff;
+}
+/*MAIN*/
+#projet{
+    width: 90%;
+    margin: 0 auto 150px auto;
+}
+#projet h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 7em;
+    color: #ffffff;
+}
+#projet .container{
+    width: 95%;
+    margin: 150px auto 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#projet .container .left{
+    width:55%;
+}
+#projet .container .left h3{
+    color: #ffffff;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+#projet .container .left p{
+    color: #ffffff;
+    font-size: 1.3em;
+    margin-bottom: 45px;
+}
+#projet .container .left i{
+    color: #ffffff;
+    font-size: 4em;
+    margin-bottom: 45px;
+}
+#projet .container .left i:hover{
+    color: #fee800;
+}
+#projet .container .left .under-p{
+    margin-bottom: 45px;
+}
+#projet .container .left .warning{
+    font-size: 0.5em;
+}
+#projet .container .left .acces a{
+    color: #ffffff;
+    font-size: 1.3em;
+}
+#projet .container .left .acces:hover a{
+    color: #fee800;
+}
+#projet .container .left .acces i{
+    font-size: 1.3em;
+    margin-left: 10px;
+    transition: 1s;
+}
+#projet .container .left .acces:hover i{
+    margin-left: 20px;
+}
+#projet .container .right img{
+    border-radius: 45px;
+}
+#projet .container .right .mini{
+    display: none;
+}
+/*HR*/
+.before-end{
+    margin-bottom: 50px;
+}
+/*FOOTER*/
+footer{
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+footer p{
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: 50px;
+}
+@media screen and (max-width:1516px){
+    header{
+        width: 95%;
+    }
+    header nav{
+        width: 80%;
+    }
+    #projet h2{
+        font-size: 7em;
+    }
+}
+@media screen and (max-width:1294px){
+    header img{
+        width: 150px;
+        height: 100px;
+    }
+    header nav{
+        width: 85%;
+    }
+}
+@media screen and (max-width:1128px){
+    #projet{
+        width: 100%;
+        margin: 0 auto 150px auto;
+    }
+}
+@media screen and (max-width:980px){
+    #projet .container{
+        flex-direction: column;
+    }
+    #projet .container .left{
+        width:100%;
+        margin-bottom: 80px;
+    }
+}
+
+@media screen and (max-width:876px){
+    #projet h2{
+        font-size: 5em;
+    }
+    #projet .container{
+        margin: 50px auto 50px auto;
+    }
+}
+@media screen and (max-width:780px){
+    header nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    header nav a{
+        margin-bottom: 5px;
+    }
+    #projet h2{
+        font-size: 4em;
+    }
+}
+@media screen and (max-width:634px){
+    .before-end{
+        margin-bottom: 30px;
+    }
+    #projet h2{
+        font-size: 3.5em;
+    }
+    footer{
+        width: 95%;
+    }
+    footer p{
+        font-size: 1.2em;
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width:584px){
+    #projet h2{
+        font-size: 3em;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width:504px){
+    header img{
+        width: 100px;
+        height: 80px;
+    }
+    header nav a{
+        font-size: 1.2em;
+    }
+    #projet .container .left h3{
+        font-size: 1.8em;
+    }
+    #projet .container .left p{
+        font-size: 1.2em;
+    }
+    #projet .container .left i{
+        font-size: 3em;
+    }
+}
+@media screen and (max-width:432px){
+    #projet .container .right img{
+        display: none;
+    }
+    #projet .container .right .mini{
+        display: block;
+    }
+}
+@media screen and (max-width:410px){
+    #projet h2{
+        font-size: 2em;
+    }
+    footer{
+        text-align: center;
+        flex-direction: column-reverse;
+    }
+}
