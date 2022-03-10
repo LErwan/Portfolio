@@ -605,6 +605,9 @@ footer p{
     #portfolio figure{
         height: 400px;
     }
+    #portfolio figure .more{
+        display: none;
+    }
     #skills h2{
         font-size: 3em;
         margin-bottom: 20px;
